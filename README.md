@@ -18,3 +18,12 @@ npm start
 ```sh
 npm run build
 ```
+
+###Todos
+- [x] static site generator
+- [x] gh-pages cli - pushes to master
+- [] set up with NPM scripts `npm run deploy`
+- [] stylize and make it my own
+- [] write, write, write
+- [] social media
+- [] disqus

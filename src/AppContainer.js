@@ -19,7 +19,7 @@ const AppContainer = (props) => (
     <Footer />
   </Container>
 )
-console.log(AppContainer)
+
 AppContainer.propTypes = {
   children: PropTypes.node,
 }

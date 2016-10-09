@@ -1,28 +1,9 @@
 ---
-title: Phenomic base theme
+title: Tommy's Software Developer
 layout: Homepage
 ---
 
-Hi there.
-
-Before having fun with Phenomic, be sure to read (or at least pretend to)
-the documentation :
-
-* [Setup](https://phenomic.io/docs/setup/)
-* [Getting Started](https://phenomic.io/docs/getting-started/)
-* [Usage](https://phenomic.io/docs/usage/)
-* [FAQ](https://phenomic.io/docs/faq/)
-
-Also take a look to
-[existing websites that use Phenomic](https://phenomic.io/showcase/),
-some projects share their source code!
-
-Built with
-<a href="https://facebook.github.io/react/">
-  <img alt="" src="assets/react.svg" width="16" height="16" />
-  React
-</a>.
-
+Hi there, welcome to my space on the web. Here you will find meanderings about life and the web development.
 ---
 
 You may want to take a look to the <a href="/404.html">404.html</a> page and

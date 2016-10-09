@@ -5,7 +5,11 @@ import styles from "./index.css"
 const Footer = () => (
   <footer className={ styles.footer }>
     { /* If you like Phenomic, this is a way to share the love ;) */ }
-    <p>
+    <p className="vcard">
+    <a href={ "http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" }>
+    creative commons
+    </a>
+      and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a> |
       <a
         href={ process.env.PHENOMIC_HOMEPAGE }
         className={ styles.phenomicReference }

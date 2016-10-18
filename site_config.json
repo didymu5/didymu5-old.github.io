@@ -1,0 +1,8 @@
+{
+  "siteTitle":"Tommy's Personal Webspace",
+  "sitePhrase": "Meanderings of a software guy about work, life and travel.",
+  "siteUrl": "https://didymu5.github.io/",
+  "CONTENT_DIR": "./content/",
+  "ASSETS":"./assets",
+  "DIST":"./dist"
+}

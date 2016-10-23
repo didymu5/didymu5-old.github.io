@@ -1,0 +1,9 @@
+---
+title: Vikings are Crazy
+description: Trying Third posting
+date: 21 October 2016
+---
+
+Our knowledge about the arms and armour of the Viking age is based on archaeological finds, pictorial representation, and to some extent on the accounts in the Norse sagas and Norse laws recorded in the 13th century. According to custom, all free Norse men were required to own weapons and were permitted to carry them all the time. These arms were indicative of a Viking's social status: a wealthy Viking had a complete ensemble of a helmet, shield, mail shirt, and sword. A typical bóndi (freeman) was more likely to fight with a spear and shield, and most also carried a seax as a utility knife and side-arm. Bows were used in the opening stages of land battles and at sea, but they tended to be considered less "honourable" than a melee weapon. Vikings were relatively unusual for the time in their use of axes as a main battle weapon. The Húscarls, the elite guard of King Cnut (and later of King Harold II) were armed with two-handed axes that could split shields or metal helmets with ease.
+
+The warfare and violence of the Vikings were often motivated and fuelled by their beliefs in Norse religion, focusing on Thor and Odin, the gods of war and death.[132][133] In combat, it is believed that the Vikings sometimes engaged in a disordered style of frenetic, furious fighting known as berserkergang, leading them to be termed berserkers. Such tactics may have been deployed intentionally by shock troops, and the berserk-state may have been induced through ingestion of materials with psychoactive properties, such as the hallucinogenic mushrooms, Amanita muscaria,[134] or large amounts of alcohol.[135]

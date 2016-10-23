@@ -2,15 +2,13 @@ doctype html
 html(lang="en")
   head
     title= pageTitle
-    script(type='text/javascript').
-      if (foo) bar(1 + 5)
+    meta(name="description" content="hello there")
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css', type='text/css')
   body
-    h1 Pug - #{title}
-    #container
-      if youAreUsingPug
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Pug is a terse and simple templating language with a
-        strong focus on performance and powerful features.
+    h1 Pug - #{attributes.title}
+    .ui.text.container
+      if content
+        p.
+          there is content!
+      block content
+        poooh

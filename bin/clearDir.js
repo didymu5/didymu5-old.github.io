@@ -1,21 +1,12 @@
 'use strict';
-import * as fs from "fs";
+import rimraf from "../node_modules/rimraf";
 
-const clearDir = function(dirPath) {
-  try {
-    var files = fs.readdirSync(dirPath);
-  } catch (e) {
-    return;
-  }
-  if (files.length > 0)
-    for (var i = 0; i < files.length; i++) {
-      var filePath = dirPath + '/' + files[i];
-      if (fs.statSync(filePath).isFile())
-        fs.unlinkSync(filePath);
-      else
-        rmDir(filePath);
-    }
-  fs.rmdirSync(dirPath);
+const clearDir = (dirPath) => {
+  return rimraf(dirPath, (err, s) => {
+    console.log(dirPath)
+    console.log(s);
+    return 'something';
+  });
 };
 
 export default clearDir;

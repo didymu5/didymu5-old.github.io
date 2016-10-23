@@ -1,5 +1,6 @@
 # Tommy's github pages on the web.
-I'm using Phenomic to learn some react stuff and webpack stuff
+~~I'm using Phenomic to learn some react stuff and webpack stuff~~ <- No longer doing that.
+I'm rolling my own to learn some other stuff. Using pug, front-mater and some good ole nodejs with Babel doing transpiling.
 
 ## Install dependencies
 

@@ -81,7 +81,7 @@ nbproject
 *.sublime-workspace
 
 # node.js
-node_modules
+/node_modules
 
 
 #

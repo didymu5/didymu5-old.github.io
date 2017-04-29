@@ -3,7 +3,7 @@ title: The First
 tags: ['thoughts', 'blogging']
 ---
 
-I suppose this site has been in the making for over 10 years. Since my college days. It's taken this long to post the first post because, well, it's time to work on this and I really have trouble deciding things.
+It's been 10 years in the making for my personal blog, and I can honestly say this will by my first 'launch'. It's since college that I started this small personal endevor. Life has a bunch of distractions and it's easy for me to get sidetracked for my personal projects with the pitfalls of trying to decide what's the best platform to do this on. And then of course there's the personal time produce something that I won't be too ashamed of, while questioning the movtivation and reasons I'm blogging.
 
 ## Many choices for a CMS
 

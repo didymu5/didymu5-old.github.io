@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: HappyGrunt
 subtitle:
 description:
 author: Tomas Woo
-language:
+language: en-US
 timezone: America/Los Angeles
 
 # URL
@@ -64,7 +64,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme: Daily
+theme: clean-blog
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

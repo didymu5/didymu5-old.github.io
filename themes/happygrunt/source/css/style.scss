@@ -1,10 +1,14 @@
-@import './normalize';
-@import './variables';
-@import './happygrunt';
-@import './nav';
-@import './post';
-@import './highlight';
-@import './archive';
-@import './comment';
+@import 'bourbon';
+@import 'neat';
 
-@import './mobile';
+body {
+	background: #000000;
+}
+
+.default-neat-grid {
+  @include grid-container;
+}
+
+.default-neat-grid__a-single-column {
+  @include grid-column(1);
+}

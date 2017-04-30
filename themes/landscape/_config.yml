@@ -34,3 +34,11 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+bourbon_neat:
+  outputStyle: compressed
+  indentedSyntax: false
+  omitSourceMapUrl: true
+  sourceMap: true
+  sourceMapEmbed: false
+  sourceMapContents: false

@@ -9,7 +9,7 @@ favicon: https://hexo.io/icon/favicon-96x96.png
 logo: https://hexo.io/logo.svg
 
 # disqus
-#disqus_shortname: drakeleung
+disqus_shortname: happygrunt
 
 highlight:
   enable: true
@@ -22,7 +22,7 @@ nav:
   home: .
   archive: archives
   # about: about
-  # rss: atom.xml
+  rss: atom.xml
 
 # hexo-renderer-sass
 node_sass:

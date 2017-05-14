@@ -1,23 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-<!-- Head tag -->
+<html lang="en">
 <%- partial('_partial/head') %>
-
 <body>
-
-  <!-- Nav -->
-  <%- partial('_partial/nav') %>
-
-  <!-- Main Content -->
+  <%- partial('_partial/header') %>
   <%- body %>
-
-  <!-- Footer -->
   <%- partial('_partial/footer') %>
 
   <!-- After footer scripts -->
   <%- partial('_partial/after-footer') %>
-
+  <%- partial('_partial/ga.ejs') %>
 </body>
-
 </html>

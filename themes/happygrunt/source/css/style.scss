@@ -1,14 +1,159 @@
-@import 'bourbon';
-@import 'neat';
+@import "bourbon";
+@import "neat";
+@import "config";
+
+@import "util/breakpoint";
+@import "util/flex";
+@import "util/circle";
+@import "typography";
 
 body {
-	background: #000000;
+	@extend %type-system-sans;
+	margin: 0;
+	border-top: 1px #000 solid;
+	font-size: 110%;
+}
+.hg-header {
+	@include flexbox();
+	@include flex-direction(column);
+	text-align: center;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+@mixin header_logo_bg($sizing) {
+	-webkit-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
+	display: block;
+	min-width: $sizing;
+	max-width: $sizing;
+	text-indent: -9999em;
+	background: no-repeat 51%/80% url('../images/gravatar.png');
+	background-size: $sizing $sizing;
+}
+.hg-header-on-page {
+	@include flexbox();
+	text-align: left;
+	padding-top: auto;
+	padding-top: auto;
+	.hg-header-logo-image--circle-on-page {
+		@include circle(36px, #eee);
+		@include header_logo_bg(36px);
+		min-width: 36px;
+		max-width: 36px;
+		position: absolute;
+		top: 1em;
+		left: 1em;
+	}
+}
+.hg-header-logo-image--circle {
+	@include circle(75px, #eee);
+	@include header_logo_bg(75px);
+	margin-left: auto;
+	margin-right: auto;
+	transition: transform 1s;
+	&.circle--shrink {
+    transform: scale(0.5);
+  }
+  &.circle--position-left {
+  	// // position: fixed;
+  	// transition: 1s;
+  	// top: 0;
+  	// left: 0;
+  }
+}
+.index-block__container {
+	@include grid-container;
+}
+.post-list-block__container {
+	@include flexbox();
+	@include flex-direction(column);
+	@include justify-content(center);
+	@include clearfix;
+	margin-left: auto;
+	max-width: 100%
+}
+@mixin post_width_alignment($postWidth) {
+	min-width: 8rem;
+	max-width: $postWidth;
+	margin-left: auto;
+	margin-right: auto;
+}
+%post_elements {
+	.entry-title {
+		@extend h1;
+		text-align: center;
+		a {
+			color: $base-font-color;
+		}
+	}
+	.subtitle {
+		@extend h2;
+	}
+	.posted-on {
+		@extend .date;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.post__tags {
+		text-align: center;
+		a {
+			@extend .type;
+			color: $dark-gray
+		}
+	}
+	.divide {
+		display: block;
+		clear: both;
+		width: 20%;
+		border-bottom: 2px $dark-gray solid;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.post__container {
+	@extend %post_elements;
+	@include post_width_alignment(40rem);
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	@include breakpoint($tablet-and-under) {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 2rem;
+	}
+}
+.post__container--expansive {
+	@extend .post__container;
+	@extend %post_elements;
+	max-width: 100%;
+	text-align: center;
+	.entry-content {
+		h1, h2, h3, h4, h5, p, ul, ol, pre {
+			@include post_width_alignment(40rem);
+			text-align: left;
+		}
+	}
+	.image--expansive {
+		@include clearfix
+		width: 100%;
+		max-width: 1200px;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		&:after {
+			content: 'caption of course'
+		}
+	}
+	@include breakpoint($tablet-and-under) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
-.default-neat-grid {
-  @include grid-container;
-}
-
-.default-neat-grid__a-single-column {
-  @include grid-column(1);
+.footer__container {
+	@extend %type-system-sans;
+	color: $light-gray;
+	text-align: center;
 }

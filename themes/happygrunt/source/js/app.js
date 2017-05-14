@@ -1,41 +1,33 @@
-var appDaily = {
-  baiduSearch: function(words) {
-    var key = 'site:' + window.location.host + '%20' + words.replace(/\s/g, '%20');
-    var url = 'https://www.baidu.com/baidu?tn=baidu&ie=utf-8&word=';
+(function() {
+	var circle_logo = document.getElementsByClassName('hg-header-logo-image--circle')[0];
+	circle_logo && scroll_to_shrink_header();
 
-    window.open(url + key, '_blank');
-  },
-  googleSearch: function(words) {
-    var key = 'site:' + window.location.host + '%20' + words.replace(/\s/g, '%20');
-    var url = 'https://www.google.com/search?q=';
+	function scroll_to_shrink_header() {
+		var last_known_scroll_position = 0;
+		var ticking = false;
 
-    window.open(url + key, '_blank');
-  },
-  submitSearch: function(search_engines) {
-    var $ipt = document.getElementById('homeSearchInput');
+		function transformHeader(scroll_pos) {
 
-    if (search_engines === 'baidu') {
-      this.baiduSearch($ipt.value.trim());
-    } else {
-      this.googleSearch($ipt.value.trim());
-    }
+			if(scroll_pos > 40) {
+				if (document.getElementsByClassName('circle--shrink').length === 0) {
+					circle_logo.classList.value += ' circle--shrink circle--position-left';
+				}
+				if (scroll_pos < 40) {
+					console.log(scroll_pos);
+				}
+				return;
+			}
+		}
 
-    return false;
-  },
-  bindToggleButton: function() {
-    var btn = document.querySelector('.menu-toggle');
-    var nav = document.querySelector('.navbar');
-
-    btn.addEventListener('click', function() {
-      var c = nav.getAttribute('class') || '';
-
-      if (c.indexOf('show-force') !== -1) {
-        nav.setAttribute('class', c.replace(/show-force/, '').trim());
-      } else {
-        nav.setAttribute('class', (c + ' show-force').trim());
-      }
-    });
-  }
-};
-
-appDaily.bindToggleButton();
+		window.addEventListener('scroll', function(e) {
+			last_known_scroll_position = window.scrollY;
+			if (!ticking) {
+				window.requestAnimationFrame(function() {
+					transformHeader(last_known_scroll_position);
+					ticking = false;
+				});
+			}
+			ticking = true;
+		});
+	}
+})()

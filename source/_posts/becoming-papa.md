@@ -9,5 +9,3 @@ It wouldn't be until couple of years after reading the book that I met some frie
 This year, I will become a Papa. The first child, that everyone says will change your life. It's obvious by the sheer amount of decisions and baby topics and things a "first-world" parent gets immersed in.
 
 >Should we get the Graco or the Chicco?"
-
-

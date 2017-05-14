@@ -1,5 +1,6 @@
 ---
-title: The First
+title: The First of the Static Site
+excerpt: Hello there
 tags: ['thoughts', 'blogging']
 ---
 

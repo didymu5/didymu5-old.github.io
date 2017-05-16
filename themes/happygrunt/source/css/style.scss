@@ -1,11 +1,11 @@
 @import "bourbon";
 @import "neat";
 @import "config";
-
 @import "util/breakpoint";
 @import "util/flex";
 @import "util/circle";
 @import "typography";
+@import "icon";
 
 body {
 	@extend %type-system-sans;
@@ -16,14 +16,15 @@ body {
 .hg-header {
 	@include flexbox();
 	@include flex-direction(column);
+	@include justify-content(center);
 	text-align: center;
 	padding-top: 3em;
 	padding-bottom: 3em;
 }
 @mixin header_logo_bg($sizing) {
-	-webkit-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 21px -5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 21px -5px rgba(0, 0, 0, 0.75);
 	display: block;
 	min-width: $sizing;
 	max-width: $sizing;
@@ -36,6 +37,7 @@ body {
 	text-align: left;
 	padding-top: auto;
 	padding-top: auto;
+
 	.hg-header-logo-image--circle-on-page {
 		@include circle(36px, #eee);
 		@include header_logo_bg(36px);
@@ -49,18 +51,39 @@ body {
 .hg-header-logo-image--circle {
 	@include circle(75px, #eee);
 	@include header_logo_bg(75px);
+	border: 2px $light-gray solid;
 	margin-left: auto;
 	margin-right: auto;
 	transition: transform 1s;
+
 	&.circle--shrink {
-    transform: scale(0.5);
-  }
-  &.circle--position-left {
-  	// // position: fixed;
-  	// transition: 1s;
-  	// top: 0;
-  	// left: 0;
-  }
+		transform: scale(0.5);
+	}
+	&.circle--position-left {
+		// // position: fixed;
+		// transition: 1s;
+		// top: 0;
+		// left: 0;
+	}
+}
+.social-icons__block {
+	@include flexbox();
+	@include justify-content(center);
+	// max-width: 600px;
+	margin: 0;
+	padding: 0;
+	li {
+		display: block;
+		align-self: center;
+		list-style-type: none;
+		list-style: none;
+		max-width: 3rem;
+		min-height: 3rem;
+		margin: 0;
+		a {
+			@include clearfix;
+		}
+	}
 }
 .index-block__container {
 	@include grid-container;
@@ -83,6 +106,7 @@ body {
 	.entry-title {
 		@extend h1;
 		text-align: center;
+
 		a {
 			color: $base-font-color;
 		}
@@ -97,6 +121,7 @@ body {
 	}
 	.post__tags {
 		text-align: center;
+
 		a {
 			@extend .type;
 			color: $dark-gray
@@ -119,6 +144,7 @@ body {
 	@include post_width_alignment(40rem);
 	margin-top: 3rem;
 	margin-bottom: 3rem;
+
 	@include breakpoint($tablet-and-under) {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -130,6 +156,7 @@ body {
 	@extend %post_elements;
 	max-width: 100%;
 	text-align: center;
+
 	.entry-content {
 		h1, h2, h3, h4, h5, p, ul, ol, pre {
 			@include post_width_alignment(40rem);
@@ -142,6 +169,7 @@ body {
 		max-width: 1200px;
 		margin-top: 10px;
 		margin-bottom: 30px;
+
 		&:after {
 			content: 'caption of course'
 		}
@@ -151,7 +179,6 @@ body {
 		padding-right: 20px;
 	}
 }
-
 .footer__container {
 	@extend %type-system-sans;
 	color: $light-gray;

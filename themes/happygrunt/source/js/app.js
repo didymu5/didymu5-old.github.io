@@ -10,10 +10,11 @@
 
 			if(scroll_pos > 40) {
 				if (document.getElementsByClassName('circle--shrink').length === 0) {
-					circle_logo.classList.value += ' circle--shrink circle--position-left';
+					document.getElementsByClassName('hg-header')[0]
+					// circle_logo.classList.value += ' circle--shrink circle--position-left';
 				}
 				if (scroll_pos < 40) {
-					console.log(scroll_pos);
+					// console.log(scroll_pos);
 				}
 				return;
 			}

@@ -3,18 +3,19 @@
     color: $light-gray;
     // IE8
     fill: $light-gray;
-    // transform: scale(1.25);
+    transform: scale(1.25);
     transition: background-color .5s, transform .5s ease-out;
 }
 $icon-background-color: hsl(264, 16%, 53%);
 @for $i from 1 through 30 {
     .icon-#{$i} {
+	display: block;
         color: hsl($i * 264, 16%, 53%);
         // IE8;
         fill: hsl($i * 264, 16%, 53%);
 
         &:hover {
-            background: hsl($i * 264, 16%, 53%);
+            // background-color: hsl($i * 264, 16%, 53%);
             @extend %social-icon-hover;
         }
     	svg {

@@ -52,7 +52,6 @@ body {
 .hg-header-logo-image--circle {
 	@include circle(75px, #eee);
 	@include header_logo_bg(75px);
-	border: 2px #fff solid;
 	margin-left: auto;
 	margin-right: auto;
 	transition: transform 1s;

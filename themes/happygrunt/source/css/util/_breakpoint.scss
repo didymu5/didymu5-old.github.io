@@ -7,6 +7,7 @@ $sm-only: ( min: map-get($sm, min), max: map-get($md, min) - 1 );
 $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
 
 $tablet-and-under: (max: map-get($sm, min) - 1 );
+$small-desktop-and-up: (min: map-get($sm, min));
 @mixin breakpoint($map) {
   $query: "";
   @if map-has-key($map, min) { $query: append($query, "(min-width: #{map-get($map, min)})") }

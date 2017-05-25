@@ -44,9 +44,15 @@ body {
 		@include header_logo_bg(36px);
 		min-width: 36px;
 		max-width: 36px;
-		position: absolute;
-		top: 1em;
-		left: 1em;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1rem;
+		@include breakpoint($small-desktop-and-up) {
+			position: absolute;
+			top: 1em;
+			left: 1em;
+		}
 	}
 }
 .hg-header-logo-image--circle {

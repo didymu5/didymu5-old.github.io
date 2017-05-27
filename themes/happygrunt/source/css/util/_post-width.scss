@@ -1,0 +1,6 @@
+@mixin post_width_alignment($postWidth) {
+	min-width: 8rem;
+	max-width: $postWidth;
+	margin-left: auto;
+	margin-right: auto;
+}

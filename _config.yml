@@ -17,6 +17,9 @@ root: /
 permalink: blog/:year/:title/
 permalink_defaults:
 
+# disqus
+disqus_shortname: 'happygrunt'
+
 # Directory
 source_dir: source
 public_dir: public

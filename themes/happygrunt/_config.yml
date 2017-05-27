@@ -8,9 +8,6 @@ favicon: https://hexo.io/icon/favicon-96x96.png
 # banner_large: images/banner-large.png
 logo: images/gravatar.png
 
-# disqus
-disqus_shortname: happygrunt
-
 highlight:
   enable: true
   line_number: false

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "hex": "hexo",
-    "deploy": "cp CNAME ./.deploy_git && hexo deploy"
+    "deploy": "hexo deploy"
   },
   "hexo": {
     "version": "3.3.7"

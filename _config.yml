@@ -17,6 +17,8 @@ root: /
 permalink: blog/:year/:title/
 permalink_defaults:
 
+#CNAME for github pages
+CNAME: happygrunt.com
 # disqus
 disqus_shortname: 'happygrunt'
 

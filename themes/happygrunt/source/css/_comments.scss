@@ -1,3 +1,7 @@
 .post__comments-containers {
 	@include post_width_alignment(40rem);
+	@include breakpoint($tablet-and-under) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }

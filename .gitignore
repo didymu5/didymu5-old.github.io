@@ -90,3 +90,4 @@ nbproject
 tmp/*
 
 /public
+/.deploy_git

@@ -14,6 +14,10 @@ body {
 	margin: 0;
 	border-top: 1px #000 solid;
 	font-size: 100%;
+	min-width: 320px;
+	@include breakpoint($tablet-and-under) {
+		font-size: 110%;
+	}
 }
 .hg-header {
 	@include flexbox();
@@ -147,13 +151,14 @@ body {
 		margin-bottom: 20px;
 		margin-left: auto;
 		margin-right: auto;
+		transition: transform 1s;
 	}
 }
 .post__container {
 	@extend %post_elements;
 	@include post_width_alignment(40rem);
-	margin-top: 3rem;
-	margin-bottom: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 
 	@include breakpoint($tablet-and-under) {
 		padding-left: 20px;

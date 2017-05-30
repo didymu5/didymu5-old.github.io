@@ -13,7 +13,7 @@ body {
 	@extend %type-system-sans;
 	margin: 0;
 	border-top: 1px #000 solid;
-	font-size: 110%;
+	font-size: 100%;
 }
 .hg-header {
 	@include flexbox();

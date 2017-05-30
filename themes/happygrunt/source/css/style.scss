@@ -183,6 +183,17 @@ body {
 		padding-right: 20px;
 	}
 }
+.archive__container{
+	@include post_width_alignment(40rem);
+	.archive__article-list {
+		list-style-type: none;
+		padding-left: 0;
+		.date {
+			color: $light-gray;
+		}
+	}
+}
+
 .footer__container {
 	@extend %type-system-sans;
 	color: $light-gray;

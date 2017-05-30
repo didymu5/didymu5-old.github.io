@@ -131,6 +131,12 @@ body {
 			color: $dark-gray
 		}
 	}
+	blockquote {
+		p {
+			font-style: italic;
+			@extend h2;
+		}
+	}
 	.divide {
 		display: block;
 		clear: both;

@@ -13,8 +13,9 @@ body {
 	@extend %type-system-sans;
 	margin: 0;
 	border-top: 1px #000 solid;
-	font-size: 100%;
+	font-size: 1.1em;
 	min-width: 320px;
+	-webkit-font-smoothing: antialiased;
 	@include breakpoint($tablet-and-under) {
 		font-size: 110%;
 	}
@@ -67,7 +68,7 @@ body {
 	@include header_logo_bg(75px);
 	margin-left: auto;
 	margin-right: auto;
-	transition: transform 1s;
+	transition: width 1s;
 
 	&.circle--shrink {
 		transform: scale(0.5);

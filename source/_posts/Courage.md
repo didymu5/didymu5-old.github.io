@@ -1,7 +1,10 @@
 title: Courage
 author: Tomas Woo
 tags:
-  - 'courage, thoughts, software development, work culture'
+  - courage
+  - work culture
+  - software development
+  - ''
 categories: []
 date: 2017-05-05 08:49:00
 ---

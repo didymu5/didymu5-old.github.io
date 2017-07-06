@@ -80,6 +80,12 @@ body {
 		// left: 0;
 	}
 }
+.front-page-description__block {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 20%;
+	padding-right: 20%;
+}
 .social-icons__block {
 	@include flexbox();
 	@include justify-content(center);
